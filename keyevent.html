@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #zero {
+        display: flex;
+    }
+
+    #one {
+        border-style: double;
+        border-color: white;
+        height: 565px;
+        width: 15%;
+        padding: 20px;
+        background-color: black;
+    }
+
+    #two  {
+        border-style: double;
+        border-color: white;
+        height: 565px;
+        width: 90%;
+        padding: 20px;
+        background-color: black;
+    }
+
+    #three{
+        height: 530px;
+        width: 95%;
+        padding: 20px;
+        resize: none;
+    }
+    #four{border-style: double;
+          border-color: white ;
+          height:200px;
+          width: 200px;
+          padding-left:10px;
+          padding-top:10px;
+          overflow: scroll;
+       }
+
+    .image {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .color {
+        color: white;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div id="zero">
+        <div id="one">
+            <h3 class="color">Background color :</h3>
+            <input type="text" placeholder="background color"
+                onkeyup="document.getElementById('three').style.background=this.value"> <br><br>
+            <h3 class="color">Text color :</h3>
+            <input type="text" placeholder="text color"
+                onkeyup="document.getElementById('three').style.color=this.value"><br><br>
+         <h3 class="color"> Background image:</h3>
+        <div id="four">
+            <image src="logo3.jpg" class="image" onclick="image()">
+            <image src="wallpaper.jpg" class="image" onclick="image0()">
+            <image src="wallpaper1.jpg" class="image" onclick="image1()"> <br> <br>
+            <image src="wallpaper2.jpg" class="image" onclick="image2()">
+            <image src="wallpaper3.jpg" class="image" onclick="image3()"> 
+            <image src="wallpaper4.jpg" class="image" onclick="image4()"> <br> <br>  
+            <image src="wallpaper5.jpg" class="image" onclick="image5()"> 
+            <image src="wallpaper6.jpg" class="image" onclick="image6()">
+            <image src="wallpaper7.jpg" class="image" onclick="image7()">       
+        </div>  
+        </div>
+
+        <div id="two">
+            <textarea  Id="three" maxlength=4689></textarea>
+        </div>    
+    </div>
+
+
+
+<script>
+function image(){
+document.getElementById("three").style.backgroundImage="url(logo3.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image0(){
+document.getElementById("three").style.backgroundImage="url(wallpaper.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image1(){
+document.getElementById("three").style.backgroundImage="url(wallpaper1.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image2(){
+document.getElementById("three").style.backgroundImage="url(wallpaper2.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image3(){
+document.getElementById("three").style.backgroundImage="url(wallpaper3.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image4(){
+document.getElementById("three").style.backgroundImage="url(wallpaper4.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image5(){
+document.getElementById("three").style.backgroundImage="url(wallpaper5.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image6(){
+document.getElementById("three").style.backgroundImage="url(wallpaper6.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+function image7(){
+document.getElementById("three").style.backgroundImage="url(wallpaper7.jpg)" ;
+document.getElementById("three").style.backgroundRepeat="no-repeat" ;
+document.getElementById("three").style.backgroundSize="100% 100%" ;
+}
+
+</script>
+</body>
+</html>

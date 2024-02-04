@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{margin: 0px; padding: 0px;box-sizing: border-box;}
+    .sidenav {
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        position: fixed;
+        padding-top: 50px;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    #btn {
+        top: 0;
+        left: 50px;
+        font-size: 50px;
+    }
+
+    .sidenav a {
+        display: block;
+        padding: 10px 8px 8px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        font-size: 50px;
+        top: 20;
+        right: 10px;
+        margin-left: 50px;
+    }
+
+
+    #one {
+        border-color: white;
+        height: 1000px;
+        width: 20%;
+        padding: 20px;
+        background-color: black;
+    }
+
+    #two {
+        border-style: double;
+        border-color: white;
+        height: 565px;
+        width: 100%;
+    }
+
+    #three {
+        height: 100%;
+        width: 95%;
+        padding: 20px;
+        resize: none;
+        margin-top: 5px;
+    }
+
+    #four {
+        border-style: double;
+        border-color: white;
+        height: 200px;
+        width: 200px;
+        padding-left: 10px;
+        padding-top: 10px;
+        overflow: hidden;
+    }
+
+    .image {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .color {
+        color: white;
+        margin-top: 5px;
+    }
+
+    #font {
+        border-style: double;
+        height: 50px;
+        width: 200px;
+    }
+
+    hr {
+        color: aliceblue;
+        width: 250px
+    }
+</style>
+
+<body>
+    <div class="sidenav" id="sidenav1"><a href="#" class=" closebtn" onclick="closeNav()"> &times;</a>
+        <div id="zero">
+            <div id="one">
+                <h3 class="color">BackgroundColor:</h3>
+                <input type="text" placeholder="background color"
+                    onkeyup="document.getElementById('three').style.background=this.value"> <br>
+                <hr><br>
+                <h3 class="color">TextColor:</h3>
+                <input type="text" placeholder="text color"
+                    onkeyup="document.getElementById('three').style.color=this.value"><br>
+                <hr><br>
+                <h3 class="color"> BackgroundImage:</h3>
+                <div id="four">
+                    <image src="logo3.jpg" class="image" onclick="image()">
+                        <image src="wallpaper.jpg" class="image" onclick="image0()">
+                            <image src="wallpaper1.jpg" class="image" onclick="image1()"> <br> <br>
+                                <image src="wallpaper2.jpg" class="image" onclick="image2()">
+                                    <image src="wallpaper3.jpg" class="image" onclick="image3()">
+                                        <image src="wallpaper4.jpg" class="image" onclick="image4()"> <br> <br>
+                                            <image src="wallpaper5.jpg" class="image" onclick="image5()">
+                                                <image src="wallpaper6.jpg" class="image" onclick="image6()">
+                                                    <image src="wallpaper7.jpg" class="image" onclick="image7()">
+                </div> <br>
+                <hr>
+                <h3 class="color"> TextEditor:</h3>
+                <div id="font">
+                    <span><button onclick="font()" style="font-size:small;"> Aa </button> </span>
+                    <span><button onclick="font1()" style="font-size:medium;"> Aa </button></span>
+                    <span><button onclick="font2()" style="font-size:larger;"> Aa </button></span>
+                    <span> <button onclick="font3()" style="font-size:x-large"> Aa </button></span> <br> <br>
+                    <span><button onclick="bold()" style="font-size:large"> <b>bold </b> </button> </span>
+                    <span> <button onclick="italic()" style="font-size:large"> <i>italic </i> </button></span>
+                </div> <br><br>
+                <hr>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="btn" onclick="openNav()" style="cursor: pointer;background-color: black;color: white; width: 98%; padding-left: 20px; position: sticky;"> &equiv;</div>
+    <div id="two">
+        <textarea Id="three" maxlength=10010></textarea>
+    </div>
+
+
+    <script>
+        function openNav() { 
+            document.getElementById("sidenav1").style.width = "250px";
+         }
+        function closeNav() { document.getElementById("sidenav1").style.width = "0px"; }
+        function image() {
+            document.getElementById("three").style.backgroundImage = "url(logo3.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image0() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image1() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper1.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image2() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper2.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image3() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper3.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image4() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper4.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image5() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper5.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image6() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper6.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+        function image7() {
+            document.getElementById("three").style.backgroundImage = "url(wallpaper7.jpg)";
+            document.getElementById("three").style.backgroundRepeat = "no-repeat";
+            document.getElementById("three").style.backgroundSize = "100% 100%";
+        }
+
+        function font() {
+            document.getElementById("three").style.fontSize = "small";
+        }
+        function font1() {
+            document.getElementById("three").style.fontSize = "medium";
+        }
+        function font2() {
+            document.getElementById("three").style.fontSize = "larger";
+        }
+        function font3() {
+            document.getElementById("three").style.fontSize = "large";
+        }
+        function bold() {
+            document.getElementById("three").style.fontWeight = "bold";
+        }
+        function italic() {
+            document.getElementById("three").style.fontStyle = "italic";
+
+        }
+    </script>
+</body>
+
+</html>
